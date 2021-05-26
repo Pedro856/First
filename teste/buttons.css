@@ -1,0 +1,10 @@
+.botão{
+    left: 50%;
+    background-color:rgb(104, 82, 165);
+    width: 90%;
+    cursor: pointer;
+}
+.botão:hover{
+    background-color: #a879d8;
+    transition: 0.5s;
+}

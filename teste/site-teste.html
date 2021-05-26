@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>First website</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./buttons.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-image: url(https://static.collectui.com/shots/3986943/flower-pattern-large);
+            }
+            form h2{
+                color: rgb(62, 38, 128);
+                text-align: center;
+            }
+            form{
+                border-radius: 20%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background-color: rgb(156, 151, 226);
+                max-width: 100%;
+                padding: 25px;
+            }
+            input{
+                background-color:rgb(255, 255, 255);
+                border-radius: 10px;
+                margin: 10px;
+                outline: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2>Log In</h2>
+            <input type="email" placeholder="E-mail" required>
+            <br>
+            <input type="password" id= "inputpsw" placeholder="Senha" required>
+            <br>
+            <input type="checkbox" onclick="pswshow()">Ver senha(WIP!)
+            <br>
+            <br>
+            <input class="botão" type="submit" value="Enviar"></input>
+        </form>
+        <script>
+            function pswshow(){
+                var x = document.getElementById("inputpsw");
+                if (x.type === "password") {
+                    x.type == "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+    </body>
+</html>
